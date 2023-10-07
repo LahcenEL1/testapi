@@ -26,7 +26,7 @@ async function convertRsaToJwk() {
     }
 }
 
-app.get('/get-key', async (req, res) => {
+app.get('/getkey.json', async (req, res) => {
     try {
         const jwk = await convertRsaToJwk();
         res.json(jwk);
